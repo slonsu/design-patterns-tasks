@@ -1,4 +1,6 @@
-import {Details, DroidDetails} from "./interfaces/index";
+import {B1} from "./b1";
+import {Details, DroidDetails} from "./interfaces";
+import {Rx24} from "./rx24";
 
 function droidProducer(kind?: Details) {
     if (kind === "battle") {
@@ -16,14 +18,4 @@ function pilotDroidFactory(): DroidDetails {
     return new Rx24();
 }
 
-class B1 implements DroidDetails {
-    public info() {
-        return "B1, Battle Droid";
-    }
-}
-
-class Rx24 implements DroidDetails {
-    public info() {
-        return "Rx24, Pilot Droid";
-    }
-}
+export {Details, DroidDetails};

@@ -1,8 +1,6 @@
-interface Clonable {
-    clone(): 
-}
+import {Clonable} from "./interfaces";
 
-class Sheep {
+class Sheep implements Clonable {
 
     constructor(public name: string, public weight: number) {
         this.name = name;

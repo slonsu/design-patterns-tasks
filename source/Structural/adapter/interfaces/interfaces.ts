@@ -1,5 +1,5 @@
 export interface AttackWithSaberDetails {
-    attackWithSaber(): number
+    attackWithSaber(): number;
 }
 
 export interface AttackDetails {
