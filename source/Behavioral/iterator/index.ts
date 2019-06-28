@@ -1,7 +1,4 @@
-interface IteratorDetails<T> {
-    next(): T;
-    hasNext(): boolean;
-}
+import {IteratorDetails} from "./interfaces";
 
 class Iterator2<T> implements IteratorDetails<T> {
 
@@ -22,7 +19,7 @@ class Iterator2<T> implements IteratorDetails<T> {
     }
 }
 
-let test = new Iterator2<number>([5, 6, 785, 34]);
+const test = new Iterator2<number>([5, 6, 785, 34]);
 console.log(test.next());
 console.log(test.next());
 console.log(test.hasNext());
