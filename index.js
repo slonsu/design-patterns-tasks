@@ -1,1 +1,1 @@
-require('./build/Creational/factory/index');
+require('./build/Behavioral/iterator/index');
